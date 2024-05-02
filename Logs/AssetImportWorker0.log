@@ -335,3 +335,11 @@ Received Import Request.
 Start importing Assets/Private/JapaneseFonts/NotoSansJP-Medium SDF.asset using Guid(3a6855d2d5de547f4a45e03e571117ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e075214ddc415465fbf5fba8759232c') in 1.405329 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 1415.522940 seconds.
+  path: Assets/Private/JapaneseFonts/NotoSansJP-Medium SDF.asset
+  artifactKey: Guid(3a6855d2d5de547f4a45e03e571117ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Private/JapaneseFonts/NotoSansJP-Medium SDF.asset using Guid(3a6855d2d5de547f4a45e03e571117ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4af3b47e038f20b4f35890f83c6d385') in 1.167433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
