@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6435499550973355434}
   - component: {fileID: 6435499550973355433}
   m_Layer: 0
-  m_Name: ObjectiveTimeTrial
+  m_Name: ObjectiveTimeLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,12 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6435499550973355430}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.843828, y: 23.447208, z: -51.910393}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6435499550973355434
 MonoBehaviour:
@@ -45,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMode: 0
-  targetName: Checkpoint
-  title: Pass all Checkpoints
+  targetName: "\u30C1\u30A7\u30C3\u30AF\u30DD\u30A4\u30F3\u30C8"
+  title: "\u3059\u3079\u3066\u306E\u30C1\u30A7\u30C3\u30AF\u30DD\u30A4\u30F3\u30C8\u3092\u901A\u3063\u3066\uFF01"
   description: Checkpoints
   isOptional: 0
   delayVisible: 5
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4170175d245c6409bb0cb4cc7b2c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Pass all checkpoints before time runs out
+  message: "\u4EBA\u306B\u5F53\u305F\u3089\u305A\u75C5\u9662\u3078\u6025\u3052\uFF01"
   messagePrefab: {fileID: 11400000, guid: 4f09a4fe2b79f494cb4b65e27102ddd2, type: 2}
   delayBeforeShowing: 0
   autoDisplayOnAwake: 0

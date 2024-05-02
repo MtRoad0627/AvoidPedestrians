@@ -23,9 +23,7 @@ public class ObjectiveReachTargets : Objective
         
         yield return new WaitForEndOfFrame();
 
-        title = "Collect " +
-                (mustCollectAllPickups ? "all the" : pickupsToCompleteObjective.ToString()) + " " +
-                targetName + "s";
+        title = "すべてのチェックポイントを通って！";
         
         if (mustCollectAllPickups)
             pickupsToCompleteObjective = NumberOfPickupsTotal;
@@ -48,24 +46,30 @@ public class ObjectiveReachTargets : Objective
         // update the objective text according to how many enemies remain to kill
         if (targetRemaining == 0)
         {
-            CompleteObjective(string.Empty, GetUpdatedCounterAmount(),
-                "Objective complete: " + title);
+            CompleteObjective(string.Empty, GetUpdatedCounterAmount(), null);
         }
-        else if (targetRemaining == 1)
+        else if (targetRemaining == 2)
         {
             string notificationText = notificationPickupsRemainingThreshold >= targetRemaining
-                ? "One " + targetName + " left"
+                ? "ゴールまであと少し！"
                 : string.Empty;
             UpdateObjective(string.Empty, GetUpdatedCounterAmount(), notificationText);
         }
-        else if (targetRemaining > 1)
+        else if (targetRemaining == 5)
         {
-            // create a notification text if needed, if it stays empty, the notification will not be created
             string notificationText = notificationPickupsRemainingThreshold >= targetRemaining
-                ? targetRemaining + " " + targetName + "s to collect left"
+                ? "まもなく歩行者天国、気をつけて！"
                 : string.Empty;
+            UpdateObjective(string.Empty, GetUpdatedCounterAmount(), notificationText);
+        }
+        else if (targetRemaining >= 1)
+        {
+            // // create a notification text if needed, if it stays empty, the notification will not be created
+            // string notificationText = notificationPickupsRemainingThreshold >= targetRemaining
+            //     ? targetRemaining + " " + targetName + "s to collect left"
+            //     : string.Empty;
 
-            UpdateObjective(string.Empty, GetUpdatedCounterAmount(), notificationText);
+            UpdateObjective(string.Empty, GetUpdatedCounterAmount(), null);
         }
 
     }
