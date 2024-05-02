@@ -73,6 +73,7 @@
     <Compile Include="Assets/Private/Scripts/CollidedObject.cs" />
     <Compile Include="Assets/Private/Scripts/Patrol.cs" />
     <Compile Include="Assets/Private/Scripts/random.cs" />
+    <Compile Include="Assets/Private/Scripts/ResultManager.cs" />
     <Compile Include="Assets/Private/Scripts/SortHierarchy.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,9 +1,28 @@
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
 
 public class ExplodeCollidedObject : MonoBehaviour
 {
     [SerializeField] private LayerMask targetLayers;
+
+    // 衝突回数を記録する変数
+    private int collisionCount = 0;
+
+    // 衝突回数を表示するためのUIテキスト
+    public TextMeshProUGUI collisionCountText;
+
+    private void Start()
+    {
+        // PlayerPrefsの衝突回数をリセット
+        PlayerPrefs.SetInt("CollisionCount", 0);
+
+        // UIテキストを更新
+        if (collisionCountText != null)
+        {
+            collisionCountText.text = "衝突人数: " + collisionCount;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +36,19 @@ public class ExplodeCollidedObject : MonoBehaviour
             // 衝突サウンドを再生
             GetComponent<AudioSource>().Play(); 
             agent.enabled = false;
+
+            // 衝突回数を増やす
+            collisionCount++;
+
+            // 衝突回数をPlayerPrefsに保存（本当はシーンが変わる直前にやるべきだろう）
+            PlayerPrefs.SetInt("CollisionCount", collisionCount);
+            PlayerPrefs.Save(); // 変更を確実に保存
+
+            // UIテキストを更新
+            if (collisionCountText != null)
+            {
+                collisionCountText.text = "衝突人数: " + collisionCount;
+            }
         }
 
         //SmoothWanderingAIを無効化
