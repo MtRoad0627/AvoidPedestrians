@@ -414,8 +414,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 88080100
-      m_LastClickedID: 67720
+      m_SelectedIDs: c2b40000
+      m_LastClickedID: 46274
       m_ExpandedIDs: 06fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -726,9 +726,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapOffset: {x: -108.5, y: -98}
+      snapOffsetDelta: {x: -74, y: -48}
+      snapCorner: 3
       id: AINavigationOverlay
       index: 12
       layout: 4
@@ -797,9 +797,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -124.866394, y: 1.1152838, z: 19.304224}
+    m_Target: {x: 15.085001, y: 1.2479972, z: 21.115002}
     speed: 2
-    m_Value: {x: -124.8663, y: 1.115284, z: 19.304226}
+    m_Value: {x: 15.084718, y: 1.2479969, z: 21.114998}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -849,9 +849,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.059347615, y: 0.9273863, z: -0.16744679, w: 0.32923278}
   m_Size:
-    m_Target: 2.0641203
+    m_Target: 16.658306
     speed: 2
-    m_Value: 2.064134
+    m_Value: 16.658278
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -967,14 +967,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/ryoy/Documents/others/CarRacing
+  m_LastProjectPath: /Users/ryoy/Documents/Git/AvoidPedestrians
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e370100
-    m_LastClickedID: 79726
-    m_ExpandedIDs: 00000000783601007a3601007c3601007e3601006e37010000ca9a3b
+    m_SelectedIDs: 80360100
+    m_LastClickedID: 79488
+    m_ExpandedIDs: 00000000783601007a3601007c3601007e3601008036010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000783601007a3601007c3601007e360100
+    m_ExpandedIDs: 00000000783601007a3601007c3601007e36010080360100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
