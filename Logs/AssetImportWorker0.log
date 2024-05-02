@@ -224,3 +224,27 @@ Received Import Request.
 Start importing Assets/Private/Images/NotClearScene.JPG using Guid(58a23d28714b54837b100c5ec952682b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537fff471472f47d142bf3bef12e157f') in 0.453147 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 550.765272 seconds.
+  path: Assets/Private/JapaneseFonts
+  artifactKey: Guid(d785af2fbec7a439fbb21452ed16ac89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Private/JapaneseFonts using Guid(d785af2fbec7a439fbb21452ed16ac89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3ca3ca893321b0bf64ff80e4758088') in 0.014180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.440443 seconds.
+  path: Assets/Private/JapaneseFonts/NotoSansJP-Medium.ttf
+  artifactKey: Guid(32a6db19063cd440493ff2ee46c8ddbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Private/JapaneseFonts/NotoSansJP-Medium.ttf using Guid(32a6db19063cd440493ff2ee46c8ddbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a3cbb7f515a23850abf7843e2acc9c') in 0.935483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 14.147600 seconds.
+  path: Assets/Private/JapaneseFonts/NotoSansJP-ExtraBold.ttf
+  artifactKey: Guid(1b8a6453e1a8b4d0cb97450ac357e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Private/JapaneseFonts/NotoSansJP-ExtraBold.ttf using Guid(1b8a6453e1a8b4d0cb97450ac357e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da1e93a6387ed9b59a1b368e546c0c5') in 0.090244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
