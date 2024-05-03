@@ -1,0 +1,188 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "KartGame/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/KartGame.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KartGame.dll": {}
+        }
+      },
+      "KartGame.AI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "KartGame": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KartGame.AI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KartGame.AI.dll": {}
+        }
+      },
+      "KartGame.AI.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "KartGame.AI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KartGame.AI.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KartGame.AI.Editor.dll": {}
+        }
+      },
+      "KartGame.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "KartGame": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KartGame.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KartGame.Editor.dll": {}
+        }
+      },
+      "Unity.Karting.Tutorials/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.Karting.Tutorials.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Karting.Tutorials.dll": {}
+        }
+      },
+      "Unity.Microgame.Tutorials/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.Microgame.Tutorials.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Microgame.Tutorials.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KartGame/1.0.0": {
+      "type": "project",
+      "path": "KartGame.csproj",
+      "msbuildProject": "KartGame.csproj"
+    },
+    "KartGame.AI/1.0.0": {
+      "type": "project",
+      "path": "KartGame.AI.csproj",
+      "msbuildProject": "KartGame.AI.csproj"
+    },
+    "KartGame.AI.Editor/1.0.0": {
+      "type": "project",
+      "path": "KartGame.AI.Editor.csproj",
+      "msbuildProject": "KartGame.AI.Editor.csproj"
+    },
+    "KartGame.Editor/1.0.0": {
+      "type": "project",
+      "path": "KartGame.Editor.csproj",
+      "msbuildProject": "KartGame.Editor.csproj"
+    },
+    "Unity.Karting.Tutorials/1.0.0": {
+      "type": "project",
+      "path": "Unity.Karting.Tutorials.csproj",
+      "msbuildProject": "Unity.Karting.Tutorials.csproj"
+    },
+    "Unity.Microgame.Tutorials/1.0.0": {
+      "type": "project",
+      "path": "Unity.Microgame.Tutorials.csproj",
+      "msbuildProject": "Unity.Microgame.Tutorials.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "KartGame >= 1.0.0",
+      "KartGame.AI >= 1.0.0",
+      "KartGame.AI.Editor >= 1.0.0",
+      "KartGame.Editor >= 1.0.0",
+      "Unity.Karting.Tutorials >= 1.0.0",
+      "Unity.Microgame.Tutorials >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ryoy/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ryoy/Documents/Git/AvoidPedestrians/Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/Assembly-CSharp.csproj",
+      "packagesPath": "/Users/ryoy/.nuget/packages/",
+      "outputPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/Temp/obj/Debug/Assembly-CSharp/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ryoy/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.AI.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.AI.csproj"
+            },
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.AI.Editor.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.AI.Editor.csproj"
+            },
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.csproj"
+            },
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.Editor.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/KartGame.Editor.csproj"
+            },
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/Unity.Karting.Tutorials.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/Unity.Karting.Tutorials.csproj"
+            },
+            "/Users/ryoy/Documents/Git/AvoidPedestrians/Unity.Microgame.Tutorials.csproj": {
+              "projectPath": "/Users/ryoy/Documents/Git/AvoidPedestrians/Unity.Microgame.Tutorials.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
