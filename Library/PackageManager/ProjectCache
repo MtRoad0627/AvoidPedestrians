@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638502104860000000
-    m_Hash: 1350591977
+      ticks: 638504840000000000
+    m_Hash: 693176464
   m_LockFileStatus:
     m_FilePath: /Users/ryoy/Documents/Git/AvoidPedestrians/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638502104860000000
-    m_Hash: 1153574930
+      ticks: 638504840000000000
+    m_Hash: 9957821
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1555,122 +1555,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.5
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.learn.iet-framework@3.1.3
-  testable: 0
-  isDirectDependency: 1
-  version: 3.1.3
-  source: 1
-  resolvedPath: /Users/ryoy/Documents/Git/AvoidPedestrians/Library/PackageCache/com.unity.learn.iet-framework@3.1.3
-  assetPath: Packages/com.unity.learn.iet-framework
-  name: com.unity.learn.iet-framework
-  displayName: Tutorial Framework
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: tool
-  description: This package is used to display interactive in-Editor tutorials in
-    tutorial projects and project templates.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.4-preview
-    - 0.1.8-preview
-    - 0.1.10-preview
-    - 0.1.12-preview.2
-    - 0.1.13-preview
-    - 0.1.14-preview
-    - 0.1.15-preview
-    - 0.1.16-preview
-    - 0.1.17-preview
-    - 0.1.18-preview
-    - 0.2.0-preview.1
-    - 0.2.1-preview.1
-    - 0.2.2-preview
-    - 0.2.3-preview.1
-    - 0.3.0-preview.5
-    - 0.4.0-preview.1
-    - 0.5.0-preview.2
-    - 0.5.1-preview
-    - 0.5.1-preview.1
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3-preview.1
-    - 1.0.3-preview.2
-    - 1.0.3
-    - 1.1.0-preview.2
-    - 1.1.0-preview.3
-    - 1.1.0-preview.4
-    - 1.1.0
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 2.0.0-pre.1
-    - 2.0.0-pre.3
-    - 2.0.0-pre.4
-    - 2.0.0-pre.5
-    - 2.0.0-pre.6
-    - 2.0.0
-    - 2.1.0-pre.1
-    - 2.1.0
-    - 2.1.1-pre.1
-    - 2.1.1-pre.2
-    - 2.1.1
-    - 2.1.2-pre.2
-    - 2.1.2
-    - 2.2.0
-    - 2.2.1
-    - 2.2.2
-    - 2.2.3
-    - 3.1.1
-    - 3.1.2
-    - 3.1.3
-    compatible:
-    - 3.1.3
-    recommended: 3.1.3
-    deprecated: []
-  dependencies:
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  resolvedDependencies:
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.settings-manager
-    version: 2.0.1
-  keywords:
-  - tutorials
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638064373090000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/iet-package.git
-    revision: 803438c4505769ffe25d5e411a59a8f2c8d8831a
-    path: 
-  unityLifecycle:
-    version: 3.1.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0

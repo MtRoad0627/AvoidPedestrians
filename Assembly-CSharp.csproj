@@ -67,15 +67,16 @@
     <Compile Include="Assets/ModAssets/Scripts/Kart/EmitParticlesOnKartBounce.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Backend/TemplateEditorDetection.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Kart/Jiggler.cs" />
-    <Compile Include="Assets/Private/Scripts/SocialForce.cs" />
     <Compile Include="Assets/Karting/AddOns/MgKarting_RocketKit/Script/Rotator.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Kart/SimpleTrigger.cs" />
     <Compile Include="Assets/Private/Scripts/Agent.cs" />
+    <Compile Include="Assets/Private/Scripts/StreetSocialForce.cs" />
     <Compile Include="Assets/Private/Scripts/CollidedObject.cs" />
     <Compile Include="Assets/Private/Scripts/Patrol.cs" />
     <Compile Include="Assets/Private/Scripts/random.cs" />
     <Compile Include="Assets/Private/Scripts/ResultManager.cs" />
     <Compile Include="Assets/Private/Scripts/SortHierarchy.cs" />
+    <Compile Include="Assets/Private/Scripts/MainstreetSocialForce.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -1053,10 +1054,6 @@
       <HintPath>Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Tutorials.Core.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Tutorials.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
@@ -1093,16 +1090,8 @@
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.007">
-      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.007.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.007">
-      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.007.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
@@ -1143,10 +1132,6 @@
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Tutorials.Core">
-      <HintPath>Library/ScriptAssemblies/Unity.Tutorials.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Barracuda.iOSBLAS">
@@ -1273,8 +1258,6 @@
   <ItemGroup>
     <ProjectReference Include="KartGame.AI.csproj" />
     <ProjectReference Include="KartGame.Editor.csproj" />
-    <ProjectReference Include="Unity.Karting.Tutorials.csproj" />
-    <ProjectReference Include="Unity.Microgame.Tutorials.csproj" />
     <ProjectReference Include="KartGame.AI.Editor.csproj" />
     <ProjectReference Include="KartGame.csproj" />
   </ItemGroup>

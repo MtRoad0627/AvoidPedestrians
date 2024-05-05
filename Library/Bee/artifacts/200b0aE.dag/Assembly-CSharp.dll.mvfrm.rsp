@@ -14,16 +14,12 @@ Library/Bee/artifacts/mvdfrm/Unity.Barracuda.iOSBLAS.ref.dll_AFEEFFA15AE983A0.mv
 Library/Bee/artifacts/mvdfrm/Unity.Burst.Editor.ref.dll_EA1A6D1CB62C8BFD.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Burst.ref.dll_A43E80D48102A6F4.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.EditorCoroutines.Editor.ref.dll_728C78151872B5E7.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.InternalAPIEditorBridge.007.ref.dll_A87D3491B0402CD0.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.InternalAPIEditorBridgeDev.001.ref.dll_36854EF9FAC668B7.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.InternalAPIEngineBridge.007.ref.dll_9AF7ED3C154F1415.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.Karting.Tutorials.ref.dll_5D6C3339E3D548E5.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ML-Agents.CommunicatorObjects.ref.dll_0D523DDD542B3021.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ML-Agents.Editor.ref.dll_6AC918F0B26C5561.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ML-Agents.ref.dll_61CF73C5C09C9750.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Mathematics.Editor.ref.dll_4A3A50F3774BA9F7.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Mathematics.ref.dll_4EAD86AD4C1B715A.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.Microgame.Tutorials.ref.dll_E09F21F8F07011F1.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.PlasticSCM.Editor.ref.dll_CBF917C274624EE2.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Play.Publisher.Editor.ref.dll_7B3D4CC17CED69BD.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ProBuilder.AddOns.Editor.ref.dll_8D0FF91D4B7853DA.mvfrm
@@ -51,8 +47,6 @@ Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.Editor.ref.dll_C5B7873C632B963A.m
 Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.ref.dll_EA61D4CF7C90DCE7.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Timeline.Editor.ref.dll_1305DD42619CF31E.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Timeline.ref.dll_D292A1F7EB1601C3.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.Tutorials.Core.Editor.ref.dll_E06BD801CC8F6517.mvfrm
-Library/Bee/artifacts/mvdfrm/Unity.Tutorials.Core.ref.dll_9E5F7FA2840E843A.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.VSCode.Editor.ref.dll_58A7DE8130CE9FA5.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.VisualStudio.Editor.ref.dll_F37C0F1BA2EC04B9.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.Purchasing.ref.dll_4F3335059BFB15F3.mvfrm
