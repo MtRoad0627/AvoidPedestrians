@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 public class SmoothWanderingAI : MonoBehaviour
 {
-    private bool isScriptEnabled = true;
     public float wanderRadius = 10f;
     public float wanderTimer = 5f;
 

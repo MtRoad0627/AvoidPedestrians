@@ -51,11 +51,11 @@ public class ExplodeCollidedObject : MonoBehaviour
             }
         }
 
-        //SmoothWanderingAIを無効化
-        var smoothWanderingAI = other.GetComponent<SmoothWanderingAI>();
-        if (smoothWanderingAI != null)
+        //PedestrianAgentを無効化
+        var PedestrianAgent = other.GetComponent<PedestrianAgent>();
+        if (PedestrianAgent != null)
         {
-            smoothWanderingAI.enabled = false;
+            PedestrianAgent.enabled = false;
         }
     }
 }

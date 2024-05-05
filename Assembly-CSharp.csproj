@@ -67,6 +67,7 @@
     <Compile Include="Assets/ModAssets/Scripts/Kart/EmitParticlesOnKartBounce.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Backend/TemplateEditorDetection.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Kart/Jiggler.cs" />
+    <Compile Include="Assets/Private/Scripts/SocialForce.cs" />
     <Compile Include="Assets/Karting/AddOns/MgKarting_RocketKit/Script/Rotator.cs" />
     <Compile Include="Assets/ModAssets/Scripts/Kart/SimpleTrigger.cs" />
     <Compile Include="Assets/Private/Scripts/Agent.cs" />

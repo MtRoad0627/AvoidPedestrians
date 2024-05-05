@@ -427,6 +427,7 @@
 "Assets/Private/Scripts/Patrol.cs"
 "Assets/Private/Scripts/random.cs"
 "Assets/Private/Scripts/ResultManager.cs"
+"Assets/Private/Scripts/SocialForce.cs"
 "Assets/Private/Scripts/SortHierarchy.cs"
 -langversion:9.0
 /unsafe+

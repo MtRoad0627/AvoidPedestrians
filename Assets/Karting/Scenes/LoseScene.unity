@@ -4063,6 +4063,8 @@ MonoBehaviour:
   NotClearCanvas: {fileID: 1523523522}
   collisionCountTexts:
   - {fileID: 467013183}
+  - {fileID: 814641690}
+  - {fileID: 1072702345}
 --- !u!4 &2132548161
 Transform:
   m_ObjectHideFlags: 0
