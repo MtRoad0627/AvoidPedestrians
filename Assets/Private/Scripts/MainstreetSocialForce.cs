@@ -7,15 +7,15 @@ public class MainstreetAgent : MonoBehaviour
     NavMeshAgent agent;
     public Transform[] targets; // 目的地
     private int targetPoint = 0; // 目的地の番号
-    private bool directionChange = false; // 目的地を逆にするかどうか
+    // private bool directionChange = false; // 目的地を逆にするかどうか
     public List<Transform> agentObstacles; // エージェント障害物のリスト
     public Transform[] ObstacleAgentGroups; // 複数のAgentgroupをインスペクターから割り当てる
     private int AgentRepulsionCoefficient = 200; // エージェント反発力の係数
-    private int ambulanceRepulsionCoefficient = 200; // 救急車反発力の係数
+    private int ambulanceRepulsionCoefficient = 400; // 救急車反発力の係数
     public Transform ambulanceObstacle; // 避けるべき障害物としての救急車
     public List<Transform> attractions; // 引力を及ぼす対象のリスト
     private float personalSpaceRadius = 3f; // 個人の空間の半径
-    private float ambulanceSpaceRadius = 20f; // 救急車に対する個人の空間の半径
+    private float ambulanceSpaceRadius = 10f; // 救急車に対する個人の空間の半径
     public float attractionStrength = 1.0f; // 引力の強さ
 
     void Start()
@@ -49,11 +49,11 @@ public class MainstreetAgent : MonoBehaviour
         foreach (Transform obstacle in agentObstacles)
         {
             Vector3 directionToObstacle = transform.position - obstacle.position;
-            float distance = directionToObstacle.magnitude;
+            float Distance = directionToObstacle.magnitude;
             // 障害物が個人の空間内にある場合、反発力を計算
-            if (distance < personalSpaceRadius)
+            if (Distance < personalSpaceRadius)
             {
-                float strength = Mathf.Clamp01((personalSpaceRadius - distance) / personalSpaceRadius) * AgentRepulsionCoefficient;
+                float strength = Mathf.Clamp01((personalSpaceRadius - Distance) / personalSpaceRadius) * AgentRepulsionCoefficient;
                 Vector3 repulsionForce = directionToObstacle.normalized * strength;
                 acceleration += repulsionForce;
             }
@@ -87,14 +87,29 @@ public class MainstreetAgent : MonoBehaviour
 
         // エージェントが現目標地点に近づいてきたら、次の目標地点を選択します
         if ((targets[targetPoint].position-transform.position).magnitude < 15)
-            GotoNextTarget();
-        
-        // 35秒経ったら目標地点を切り替える
-        if (Time.time > 35 && directionChange == false)
         {
             GotoNextTarget();
-            directionChange = true;
         }
+
+        // // 30秒経ったら目標地点を切り替える
+        // if (30 < Time.time  && Time.time < 60 && directionChange == false)
+        // {
+        //     GotoNextTarget();
+        //     directionChange = true;
+        // }
+
+        // if (60 < Time.time  && Time.time < 90 && directionChange == true)
+        // {
+        //     GotoNextTarget();
+        //     directionChange = false;
+        // }
+
+        // if (90 < Time.time  && Time.time < 120 && directionChange == false)
+        // {
+        //     GotoNextTarget();
+        //     directionChange = true;
+        // }
+
     }
 
     void GotoNextTarget() {

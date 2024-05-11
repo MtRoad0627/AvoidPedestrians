@@ -13,7 +13,7 @@ public class PedestrianAgent : MonoBehaviour
     private int ambulanceRepulsionCoefficient = 200; // 救急車反発力の係数
     public Transform ambulanceObstacle; // 避けるべき障害物としての救急車
     public List<Transform> attractions; // 引力を及ぼす対象のリスト
-    private float personalSpaceRadius = 2f; // 個人の空間の半径
+    private float personalSpaceRadius = 3f; // 個人の空間の半径
     private float ambulanceSpaceRadius = 10f; // 救急車に対する個人の空間の半径
     public float attractionStrength = 1.0f; // 引力の強さ
 
@@ -55,11 +55,11 @@ public class PedestrianAgent : MonoBehaviour
         foreach (Transform obstacle in agentObstacles)
         {
             Vector3 directionToObstacle = transform.position - obstacle.position;
-            float distance = directionToObstacle.magnitude;
+            float Distance = directionToObstacle.magnitude;
             // 障害物が個人の空間内にある場合、反発力を計算
-            if (distance < personalSpaceRadius)
+            if (Distance < personalSpaceRadius * personalSpaceRadius)
             {
-                float strength = Mathf.Clamp01((personalSpaceRadius - distance) / personalSpaceRadius) * AgentRepulsionCoefficient;
+                float strength = Mathf.Clamp01((personalSpaceRadius - Distance) / personalSpaceRadius) * AgentRepulsionCoefficient;
                 Vector3 repulsionForce = directionToObstacle.normalized * strength;
                 acceleration += repulsionForce;
             }
@@ -69,7 +69,7 @@ public class PedestrianAgent : MonoBehaviour
         Vector3 directionToAmbulanceObstacle = transform.position - ambulanceObstacle.position;
         float ambulanceDistance = directionToAmbulanceObstacle.magnitude;
         // 障害物が個人の空間内にある場合、反発力を計算
-        if (ambulanceDistance < ambulanceSpaceRadius)
+        if (ambulanceDistance < ambulanceSpaceRadius * ambulanceSpaceRadius) // 2乗された値で比較
         {
             float strength = Mathf.Clamp01((ambulanceSpaceRadius - ambulanceDistance) / ambulanceSpaceRadius) * ambulanceRepulsionCoefficient;
             Vector3 repulsionForce = directionToAmbulanceObstacle.normalized * strength;

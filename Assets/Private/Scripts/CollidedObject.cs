@@ -57,5 +57,12 @@ public class ExplodeCollidedObject : MonoBehaviour
         {
             PedestrianAgent.enabled = false;
         }
+
+        //MainstreetAgentを無効化
+        var MainstreetAgent = other.GetComponent<MainstreetAgent>();
+        if (MainstreetAgent != null)
+        {
+            MainstreetAgent.enabled = false;
+        }
     }
 }
