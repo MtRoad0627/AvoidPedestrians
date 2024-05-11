@@ -2310,6 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSelection: {fileID: 129299356}
+  activeCanvas: {fileID: 1847275006}
 --- !u!1 &1947208091
 GameObject:
   m_ObjectHideFlags: 0

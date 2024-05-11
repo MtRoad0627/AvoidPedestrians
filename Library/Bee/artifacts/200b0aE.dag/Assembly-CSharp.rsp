@@ -417,6 +417,7 @@
 "Assets/ModAssets/Scripts/Kart/Jiggler.cs"
 "Assets/ModAssets/Scripts/Kart/SimpleTrigger.cs"
 "Assets/Private/Scripts/Agent.cs"
+"Assets/Private/Scripts/ButtonManager.cs"
 "Assets/Private/Scripts/CollidedObject.cs"
 "Assets/Private/Scripts/MainstreetSocialForce.cs"
 "Assets/Private/Scripts/Patrol.cs"
