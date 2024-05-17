@@ -92,7 +92,7 @@ public class PedestrianAgent : MonoBehaviour
         agent.velocity += acceleration * Time.deltaTime;
 
         // エージェントが現目標地点に近づいてきたら、次の目標地点を選択します
-        if ((targets[targetPoint].position-transform.position).magnitude < 1)
+        if ((targets[targetPoint].position-transform.position).magnitude < 2)
             GotoNextTarget();
         
     }

@@ -425,6 +425,7 @@
 "Assets/Private/Scripts/ResultManager.cs"
 "Assets/Private/Scripts/SortHierarchy.cs"
 "Assets/Private/Scripts/StreetSocialForce.cs"
+"Assets/Private/Scripts/SubCamera.cs"
 -langversion:9.0
 /unsafe+
 /deterministic
