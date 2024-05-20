@@ -1,7 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ExplodeCollidedObject" preserve="nothing"/>
-		<type fullname="FollowPlayer" preserve="nothing"/>
 		<type fullname="MainstreetAgent" preserve="nothing"/>
 		<type fullname="PedestrianAgent" preserve="nothing"/>
 		<type fullname="ResultDisplay" preserve="nothing"/>

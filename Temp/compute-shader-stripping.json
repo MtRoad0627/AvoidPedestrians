@@ -1,5 +1,4186 @@
 {
-    "totalVariantsIn": 0,
-    "totalVariantsOut": 0,
-    "shaders": []
+    "totalVariantsIn": 643,
+    "totalVariantsOut": 643,
+    "shaders": [
+        {
+            "inputVariants": 9,
+            "outputVariants": 9,
+            "name": "ActivationB",
+            "pipelines": [
+                {
+                    "inputVariants": 9,
+                    "outputVariants": 9,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reciprocal_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reciprocal_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reciprocal_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_Loop",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 4,
+            "outputVariants": 4,
+            "name": "ReduceSlow",
+            "pipelines": [
+                {
+                    "inputVariants": 4,
+                    "outputVariants": 4,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMax_NHWC",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMax_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMin_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMin_NCHW",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 20,
+            "outputVariants": 20,
+            "name": "Conv2dBase",
+            "pipelines": [
+                {
+                    "inputVariants": 20,
+                    "outputVariants": 20,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16StrictK64_T8x8_R8x8_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16StrictK64_T8x8_R8x8_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16LaxK64_T8x8_R8x8_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16LaxK64_T8x8_R8x8_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC4StrictK16_T2x32_R8x8_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC4StrictK16_T2x32_R8x8_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_LaxC4StrictK16_T2x32_R8x8_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_LaxC4StrictK16_T2x32_R8x8_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC4LaxK16_T2x32_R8x8_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC4LaxK16_T2x32_R8x8_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_KernelCached_K5x5_T16x16_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_KernelCached_K5x5_T16x16_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTransFlipKernel",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTransPadFill_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTransPadFill_NCHW",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: KernelWinograd_3x3",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DWinograd_2x2_Kernel3x3_StrictC8StrictK16_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DWinograd_2x2_Kernel3x3_StrictC8LaxK16_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "MatMul",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_T16x16_R4x4_AR3_BR2_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_T16x16_R4x4_AR3_BR2_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_T8x8_R8x8_AR3_BR2_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_T8x8_R8x8_AR3_BR2_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_L1Cached64_AR3_BR2_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MultidimMatMul_L1Cached64_AR3_BR2_NCHW",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 23,
+            "outputVariants": 23,
+            "name": "Conv2dMobile",
+            "pipelines": [
+                {
+                    "inputVariants": 23,
+                    "outputVariants": 23,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Winograd_2x2_Kernel3x3_NHWC",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Winograd_2x2_Kernel3x3_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Winograd_2x2_Kernel5x5_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Winograd_2x2_Kernel5x5_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: KernelWinograd_5x5",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Default_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_Default_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_1x4x4_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_1x4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Winograd_2x2_Kernel3x3_LDS_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Winograd_2x2_Kernel3x3_LDS_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Winograd_2x2_Kernel3x3_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Winograd_2x2_Kernel3x3_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_KernelKxK_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_KernelKxK_T16x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_T16x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_KernelKxK_T8x8_R4x4_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_KernelKxK_T8x8_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_T8x8_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Kernel1x1_T8x8_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Default_T8x8_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_Default_T8x8_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 23,
+            "outputVariants": 23,
+            "name": "ActivationA",
+            "pipelines": [
+                {
+                    "inputVariants": 23,
+                    "outputVariants": 23,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_Loop",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 19,
+            "outputVariants": 19,
+            "name": "Broadcast_NCHW",
+            "pipelines": [
+                {
+                    "inputVariants": 19,
+                    "outputVariants": 19,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastAdd_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastSub_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMul_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDiv_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastPow_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMax_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMean_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreater_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreaterEqual_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLess_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLessEqual_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastEqual_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalOr_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalAnd_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalXor_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastWhere_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDivExpSub_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogSoftmaxEnd_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 8,
+            "outputVariants": 8,
+            "name": "Conv3d",
+            "pipelines": [
+                {
+                    "inputVariants": 8,
+                    "outputVariants": 8,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_LaxC8LaxK32_T8x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_LaxC8LaxK32_T8x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_StrictC8LaxK32_T8x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_StrictC8LaxK32_T8x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_StrictC8StrictK32_T8x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3DKernelKxK_StrictC8StrictK32_T8x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "Conv2dA_NHWC",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_RegisterBlock4x2_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16K64_T16x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_T16x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernel1x1_StrictC16K64_T16x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 24,
+            "outputVariants": 24,
+            "name": "Generic",
+            "pipelines": [
+                {
+                    "inputVariants": 24,
+                    "outputVariants": 24,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_CNyx2_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_Flat_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_Flat_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_Loop_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_Loop_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNormTail_CNyx2_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNormTail_Flat_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNormTail_Flat_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNormTail_Loop_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNormTail_Loop_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_2x2_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_2x2_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Copy_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Copy_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReshapeFromNHWCModel_Flat_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReshapeFromNHWCModel_Loop_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TransposeToChannelFirst",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 24,
+            "outputVariants": 24,
+            "name": "Reduce",
+            "pipelines": [
+                {
+                    "inputVariants": 24,
+                    "outputVariants": 24,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMin",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMin_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMin",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMin_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMax",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMax_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMax",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMax_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceSum",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceSum_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceSum",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceSum_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMean",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceMean_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMean",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceMean_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceProd",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceProd_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceProd",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceProd_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceExpBias",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PartialReduceExpBias_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceExpBias",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalReduceExpBias_Loop",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 10,
+            "outputVariants": 10,
+            "name": "Dense",
+            "pipelines": [
+                {
+                    "inputVariants": 10,
+                    "outputVariants": 10,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_L1Cached64",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DenseTiled16x16",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DenseTiled32x32",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DenseTiled64x64",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_T8x8_R4x4",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_T16x16_R4x4",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_Tilled2x2_Cached",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_Tilled4x4_Cached",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MatMulPackB0Bias",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_V_L1Cached64",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 5,
+            "outputVariants": 5,
+            "name": "Transpose",
+            "pipelines": [
+                {
+                    "inputVariants": 5,
+                    "outputVariants": 5,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose2D_NHWC",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose8D",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "Conv2dA_NCHW",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_RegisterBlock4x2_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_StrictC16K64_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernelKxK_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DKernel1x1_StrictC16K64_T16x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "Dense3",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_T8x8_R8x8_NHWC",
+                            "stripTimeMs": 0.00030000000000000003
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_T8x8_R8x8_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_T8x16_R4x4_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_T8x16_R4x4_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_L1Cached64_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_L1Cached64_NCHW",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 213,
+            "outputVariants": 213,
+            "name": "BarracudaReferenceImpl",
+            "pipelines": [
+                {
+                    "inputVariants": 213,
+                    "outputVariants": 213,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dense3_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv3D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DWinograd_2x2_3x3_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DWinograd_2x2_3x3_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthwiseConv2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Conv2DTrans_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample3D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Upsample3D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleBilinear2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleTrilinear3D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: UpsampleTrilinear3D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Resample2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Resample2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ResampleBilinear2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ResampleBilinear2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthToSpace_CRD_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthToSpace_CRD_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthToSpace_DCR_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DepthToSpace_DCR_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: SpaceToDepth_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: SpaceToDepth_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Unstride2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Unstride2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalMaxPool2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalMaxPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgPool2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgVariancePool2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgVariancePool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScaleBias_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNorm_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: InstanceNorm_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dropout_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Dropout_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Abs_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Abs_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Neg_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Neg_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Ceil_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Ceil_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Floor_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Floor_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Round_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Round_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reciprocal_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reciprocal_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softmax_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softmax_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogSoftmax_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogSoftmax_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tile_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tile_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Copy_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Copy_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Copy8D",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReshapeFromNHWCModel_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Reshape8DFromChannelFirstModel_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastAdd_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastAdd_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastSub_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastSub_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMul_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMul_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDiv_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDiv_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastPow_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastPow_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMin_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMax_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMax_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMean_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMean_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreater_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreater_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreaterEqual_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreaterEqual_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLess_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLess_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLessEqual_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLessEqual_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastEqual_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastEqual_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalOr_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalOr_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalAnd_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalAnd_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalXor_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalXor_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogicalNot_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogicalNot_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastWhere_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastWhere_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMax_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMax_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMin_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ArgMin_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMin_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMax_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMax_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceSum_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceSum_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMean_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceMean_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceProd_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ReduceProd_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border3D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border3D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DEdge_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DEdge_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DReflect_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DReflect_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DSymmetric_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DSymmetric_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: StridedSlice_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: StridedSlice_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Gather_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Gather_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScatterND_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ScatterND_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Transpose8D",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TransposeToChannelFirst",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Expand_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Expand_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ConstantOfShape_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ConstantOfShape_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LRN_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LRN_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: OneHot_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: OneHot_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: RoiAlign_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: RoiAlign_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "TextureUtils",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TextureToTensor_NHWC",
+                            "stripTimeMs": 0.0005
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TextureToTensor_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TensorToTextureNoLUT_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TensorToTextureNoLUT_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TensorToTexture3DLUT_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: TensorToTexture3DLUT_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 8,
+            "outputVariants": 8,
+            "name": "Pad",
+            "pipelines": [
+                {
+                    "inputVariants": 8,
+                    "outputVariants": 8,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Border2D_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DEdge_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DEdge_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DReflect_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DReflect_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DSymmetric_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pad2DSymmetric_NCHW",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 2,
+            "outputVariants": 2,
+            "name": "DenseFP16",
+            "pipelines": [
+                {
+                    "inputVariants": 2,
+                    "outputVariants": 2,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DenseFP16Div2_NHWC",
+                            "stripTimeMs": 0.0002
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: DenseFP16Div2_NCHW",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 19,
+            "outputVariants": 19,
+            "name": "Broadcast_NHWC",
+            "pipelines": [
+                {
+                    "inputVariants": 19,
+                    "outputVariants": 19,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastAdd_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastSub_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMul_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDiv_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastPow_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMin_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMax_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastMean_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreater_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastGreaterEqual_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLess_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLessEqual_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastEqual_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalOr_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalAnd_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastLogicalXor_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastWhere_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: BroadcastDivExpSub_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogSoftmaxEnd_NHWC",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 8,
+            "outputVariants": 8,
+            "name": "Pool_NCHW",
+            "pipelines": [
+                {
+                    "inputVariants": 8,
+                    "outputVariants": 8,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2DReduce_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2DReduce_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalMaxPool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgVariancePool2DReduce_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgVariancePool2D_NCHW",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 8,
+            "outputVariants": 8,
+            "name": "Pool_NHWC",
+            "pipelines": [
+                {
+                    "inputVariants": 8,
+                    "outputVariants": 8,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgPool2DReduce_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: MaxPool2DReduce_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgPool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalMaxPool2D_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: AvgVariancePool2DReduce_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: GlobalAvgVariancePool2D_NHWC",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inputVariants": 186,
+            "outputVariants": 186,
+            "name": "ActivationBase",
+            "pipelines": [
+                {
+                    "inputVariants": 186,
+                    "outputVariants": 186,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Abs_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Abs_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Abs_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Neg_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Neg_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Neg_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Ceil_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Ceil_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Ceil_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Floor_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Floor_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Floor_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Round_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Round_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Round_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogicalNot_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LogicalNot_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sign_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_FlatStrict",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_Loop",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_Flat",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_Flat",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_FlatStrict",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_Loop",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Relu6_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: PRelu_CNyx2_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Selu_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tanh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Swish_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Softplus_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sigmoid_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: HardSigmoid_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Elu_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: LeakyRelu_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Exp_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Log_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sqrt_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Pow_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Clip_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acos_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Acosh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asin_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Asinh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atan_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Atanh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cos_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Cosh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_CNyx_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sin_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_NCHW",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Sinh_Nyxc_NHWC",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Tan_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_NCHW",
+                            "stripTimeMs": 0.0
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_CNyx_NHWC",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Erf_Nyxc_NHWC",
+                            "stripTimeMs": 0.0001
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

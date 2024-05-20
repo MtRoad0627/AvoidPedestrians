@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ExplodeCollidedObject
-    - FollowPlayer
     - MainstreetAgent
     - PedestrianAgent
     - ResultDisplay
@@ -633,8 +632,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2556}
     - Class: 114
       Script: {instanceID: 2584}
-    - Class: 114
-      Script: {instanceID: 2616}
     - Class: 114
       Script: {instanceID: 2622}
     - Class: 114
@@ -2807,4 +2804,4 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/LoseScene.unity
   - Assets/Karting/Scenes/WinScene.unity
-  playerPath: /Users/ryoy/Documents/Git/AvoidPedestrians/WebGL
+  playerPath: /Users/ryoy/Documents/Git/AvoidPedestrians/docs
