@@ -55,4 +55,4 @@ com.unity.modules.video@1.0.0
 com.unity.modules.vr@1.0.0
 com.unity.modules.wind@1.0.0
 com.unity.modules.xr@1.0.0
-New Unity Project@4.0.0
+Avoid Pedestrians@4.0.0
