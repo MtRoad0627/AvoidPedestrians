@@ -3,8 +3,8 @@
     {
       "type": "il2cppData",
       "msg": {
-        "build_event_id": "51cb15499935f420da6875b07e6dc105",
-        "node_executed": true,
+        "build_event_id": "6dabe89bf0a3c431f9ddbc036026a7f8",
+        "node_executed": false,
         "attribute_total_count_eager_static_constructor": 27,
         "attribute_total_count_set_option": 0,
         "attribute_total_count_generate_into_own_cpp_file": 0,
@@ -42,33 +42,20 @@
     {
       "type": "playerBuildTimingData",
       "msg": {
-        "build_event_id": "51cb15499935f420da6875b07e6dc105",
-        "build_player": 391284,
-        "preprocess_player": 75,
-        "produce_player_script_assemblies": 7784,
-        "build_scripts_dlls": 20,
-        "writing_asset_files": 38923,
-        "postprocess_built_player": 318141,
+        "build_event_id": "6dabe89bf0a3c431f9ddbc036026a7f8",
+        "build_player": 101860,
+        "preprocess_player": 74,
+        "produce_player_script_assemblies": 3036,
+        "build_scripts_dlls": 12,
+        "postprocess_built_player": 97563,
         "node_summary_table": [
           {
             "name": "Csc",
-            "duration": 2005
+            "duration": 2002
           },
           {
             "name": "Csc",
-            "duration": 171
-          },
-          {
-            "name": "Csc",
-            "duration": 134
-          },
-          {
-            "name": "UnityLinker.exe",
-            "duration": 5301
-          },
-          {
-            "name": "il2cpp.exe",
-            "duration": 7008
+            "duration": 2002
           }
         ]
       },
@@ -77,8 +64,8 @@
     {
       "type": "unityLinkerData",
       "msg": {
-        "build_event_id": "51cb15499935f420da6875b07e6dc105",
-        "node_executed": true,
+        "build_event_id": "6dabe89bf0a3c431f9ddbc036026a7f8",
+        "node_executed": false,
         "attribute_marked_count_always_link_assembly": 1,
         "attribute_swept_count_always_link_assembly": 0,
         "attribute_total_count_always_link_assembly": 1,
