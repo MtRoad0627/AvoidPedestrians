@@ -11,11 +11,11 @@ public class MainstreetAgent : MonoBehaviour
     public List<Transform> agentObstacles; // エージェント障害物のリスト
     public Transform[] ObstacleAgentGroups; // 複数のAgentgroupをインスペクターから割り当てる
     private int AgentRepulsionCoefficient = 200; // エージェント反発力の係数
-    private int ambulanceRepulsionCoefficient = 500; // 救急車反発力の係数
+    private int ambulanceRepulsionCoefficient = 1200; // 救急車反発力の係数
     public Transform ambulanceObstacle; // 避けるべき障害物としての救急車
     public List<Transform> attractions; // 引力を及ぼす対象のリスト
     private float personalSpaceRadius = 3f; // 個人の空間の半径
-    private float ambulanceSpaceRadius = 10f; // 救急車に対する個人の空間の半径
+    private float ambulanceSpaceRadius = 15f; // 救急車に対する個人の空間の半径
     public float attractionStrength = 1.0f; // 引力の強さ
 
     void Start()
@@ -24,6 +24,9 @@ public class MainstreetAgent : MonoBehaviour
 
         // エージェントが現在設定された目標地点に行くように設定
         agent.destination = targets[0].position;
+
+        // エージェントの最大速度をランダムに設定
+        agent.speed = Random.Range(1.0f, 3.0f);
 
         // 各Agentgroupの子オブジェクトをagentObstaclesリストに追加
         foreach (Transform group in ObstacleAgentGroups)

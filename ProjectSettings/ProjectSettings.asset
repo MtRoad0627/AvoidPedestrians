@@ -735,10 +735,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 31480317-7959-49fc-94cf-dc3643faabe1
+  cloudProjectId: 7a431b80-12ff-412e-ac20-0423621059c3
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: CarRacing 2024-04-23_12-03-39
+  projectName: AvoidPedestrians
   organizationId: mt_road
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

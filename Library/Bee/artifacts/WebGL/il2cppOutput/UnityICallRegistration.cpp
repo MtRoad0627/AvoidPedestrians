@@ -282,6 +282,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AI_NavMeshAgent_set_destination_Injected();
 		Register_UnityEngine_AI_NavMeshAgent_set_destination_Injected();
 
+		//System.Void UnityEngine.AI.NavMeshAgent::set_speed(System.Single)
+		void Register_UnityEngine_AI_NavMeshAgent_set_speed();
+		Register_UnityEngine_AI_NavMeshAgent_set_speed();
+
 		//System.Void UnityEngine.AI.NavMeshAgent::set_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_AI_NavMeshAgent_set_velocity_Injected();
 		Register_UnityEngine_AI_NavMeshAgent_set_velocity_Injected();

@@ -1902,6 +1902,8 @@ inline MainstreetAgent_t742E706F55E67405B61B14A48C15F68D48B119D9* Component_GetC
 	return ((  MainstreetAgent_t742E706F55E67405B61B14A48C15F68D48B119D9* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NavMeshAgent_set_destination_m5F0A8E4C8ED93798D6B9CE496B10FCE5B7461B95 (NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NavMeshAgent_set_speed_m820E45289B3AE7DEE16F2F4BF163EAC361E64646 (NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 inline void List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_item, const RuntimeMethod* method)
 {
@@ -2715,43 +2717,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainstreetAgent_Start_m0E42D048E1FA71BD0
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
 		NavMeshAgent_set_destination_m5F0A8E4C8ED93798D6B9CE496B10FCE5B7461B95(L_1, L_5, NULL);
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_6 = __this->___ObstacleAgentGroups;
-		V_0 = L_6;
+		NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* L_6 = __this->___agent;
+		float L_7;
+		L_7 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((1.0f), (3.0f), NULL);
+		NavMeshAgent_set_speed_m820E45289B3AE7DEE16F2F4BF163EAC361E64646(L_6, L_7, NULL);
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_8 = __this->___ObstacleAgentGroups;
+		V_0 = L_8;
 		V_1 = 0;
-		goto IL_0082;
+		goto IL_009c;
 	}
 
-IL_002f:
+IL_0049:
 	{
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_7 = V_0;
-		int32_t L_8 = V_1;
-		int32_t L_9 = L_8;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
-		RuntimeObject* L_11;
-		L_11 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_10, NULL);
-		V_2 = L_11;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_9 = V_0;
+		int32_t L_10 = V_1;
+		int32_t L_11 = L_10;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = (L_9)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_11));
+		RuntimeObject* L_13;
+		L_13 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_12, NULL);
+		V_2 = L_13;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_006a:
+FINALLY_0084:
 			{
 				{
-					RuntimeObject* L_12 = V_2;
-					V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_12, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
-					RuntimeObject* L_13 = V_4;
-					if (!L_13)
+					RuntimeObject* L_14 = V_2;
+					V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_14, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_15 = V_4;
+					if (!L_15)
 					{
-						goto IL_007d;
+						goto IL_0097;
 					}
 				}
 				{
-					RuntimeObject* L_14 = V_4;
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_14);
+					RuntimeObject* L_16 = V_4;
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_16);
 				}
 
-IL_007d:
+IL_0097:
 				{
 					return;
 				}
@@ -2760,44 +2766,44 @@ IL_007d:
 		try
 		{
 			{
-				goto IL_0060_1;
+				goto IL_007a_1;
 			}
 
-IL_003a_1:
+IL_0054_1:
 			{
-				RuntimeObject* L_15 = V_2;
-				RuntimeObject* L_16;
-				L_16 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_15);
-				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_16, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = V_3;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
-				L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				RuntimeObject* L_17 = V_2;
+				RuntimeObject* L_18;
+				L_18 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_17);
+				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_18, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = V_3;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+				L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-				bool L_19;
-				L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, L_18, NULL);
-				if (!L_19)
+				bool L_21;
+				L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_19, L_20, NULL);
+				if (!L_21)
 				{
-					goto IL_0060_1;
+					goto IL_007a_1;
 				}
 			}
 			{
-				List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_20 = __this->___agentObstacles;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = V_3;
-				List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline(L_20, L_21, List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var);
+				List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_22 = __this->___agentObstacles;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = V_3;
+				List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline(L_22, L_23, List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var);
 			}
 
-IL_0060_1:
+IL_007a_1:
 			{
-				RuntimeObject* L_22 = V_2;
-				bool L_23;
-				L_23 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_22);
-				if (L_23)
+				RuntimeObject* L_24 = V_2;
+				bool L_25;
+				L_25 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_24);
+				if (L_25)
 				{
-					goto IL_003a_1;
+					goto IL_0054_1;
 				}
 			}
 			{
-				goto IL_007e;
+				goto IL_0098;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -2806,19 +2812,19 @@ IL_0060_1:
 		}
 	}
 
-IL_007e:
+IL_0098:
 	{
-		int32_t L_24 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_24, 1));
+		int32_t L_26 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
-IL_0082:
+IL_009c:
 	{
-		int32_t L_25 = V_1;
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_26 = V_0;
-		if ((((int32_t)L_25) < ((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))))
+		int32_t L_27 = V_1;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_28 = V_0;
+		if ((((int32_t)L_27) < ((int32_t)((int32_t)(((RuntimeArray*)L_28)->max_length)))))
 		{
-			goto IL_002f;
+			goto IL_0049;
 		}
 	}
 	{
@@ -3171,9 +3177,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainstreetAgent__ctor_mE108C683E092F25DE
 {
 	{
 		__this->___AgentRepulsionCoefficient = ((int32_t)200);
-		__this->___ambulanceRepulsionCoefficient = ((int32_t)500);
+		__this->___ambulanceRepulsionCoefficient = ((int32_t)1200);
 		__this->___personalSpaceRadius = (3.0f);
-		__this->___ambulanceSpaceRadius = (10.0f);
+		__this->___ambulanceSpaceRadius = (15.0f);
 		__this->___attractionStrength = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -3726,75 +3732,79 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PedestrianAgent_Start_m27CBC2B4F20D57E93
 		L_0 = Component_GetComponent_TisNavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F_m45B783D78932EFB8409019F84FED6DF3A492F16F(__this, Component_GetComponent_TisNavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F_m45B783D78932EFB8409019F84FED6DF3A492F16F_RuntimeMethod_var);
 		__this->___agent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___agent), (void*)L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
-		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		String_t* L_2;
-		L_2 = GameObject_get_tag_mEDD27BF795072834D656B286CBE51B2C99747805(L_1, NULL);
-		bool L_3;
-		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111, NULL);
-		if (!L_3)
+		NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* L_1 = __this->___agent;
+		float L_2;
+		L_2 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((0.5f), (5.0f), NULL);
+		NavMeshAgent_set_speed_m820E45289B3AE7DEE16F2F4BF163EAC361E64646(L_1, L_2, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		String_t* L_4;
+		L_4 = GameObject_get_tag_mEDD27BF795072834D656B286CBE51B2C99747805(L_3, NULL);
+		bool L_5;
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111, NULL);
+		if (!L_5)
 		{
-			goto IL_0039;
+			goto IL_0053;
 		}
 	}
 	{
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_4 = __this->___targets;
-		int32_t L_5;
-		L_5 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)(((RuntimeArray*)L_4)->max_length)), NULL);
-		__this->___targetPoint = L_5;
-		goto IL_0051;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_6 = __this->___targets;
+		int32_t L_7;
+		L_7 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)(((RuntimeArray*)L_6)->max_length)), NULL);
+		__this->___targetPoint = L_7;
+		goto IL_006b;
 	}
 
-IL_0039:
+IL_0053:
 	{
-		NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* L_6 = __this->___agent;
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_7 = __this->___targets;
-		int32_t L_8 = 0;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_8));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
-		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
-		NavMeshAgent_set_destination_m5F0A8E4C8ED93798D6B9CE496B10FCE5B7461B95(L_6, L_10, NULL);
+		NavMeshAgent_t5D0CCC0B3B78242F286C9BD8EDD87C3CCBD0A66F* L_8 = __this->___agent;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_9 = __this->___targets;
+		int32_t L_10 = 0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = (L_9)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		NavMeshAgent_set_destination_m5F0A8E4C8ED93798D6B9CE496B10FCE5B7461B95(L_8, L_12, NULL);
 	}
 
-IL_0051:
+IL_006b:
 	{
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_11 = __this->___ObstacleAgentGroups;
-		V_0 = L_11;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_13 = __this->___ObstacleAgentGroups;
+		V_0 = L_13;
 		V_1 = 0;
-		goto IL_00af;
+		goto IL_00c9;
 	}
 
-IL_005c:
+IL_0076:
 	{
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_12 = V_0;
-		int32_t L_13 = V_1;
-		int32_t L_14 = L_13;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = (L_12)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_14));
-		RuntimeObject* L_16;
-		L_16 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_15, NULL);
-		V_2 = L_16;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_14 = V_0;
+		int32_t L_15 = V_1;
+		int32_t L_16 = L_15;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = (L_14)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_16));
+		RuntimeObject* L_18;
+		L_18 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_17, NULL);
+		V_2 = L_18;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0097:
+FINALLY_00b1:
 			{
 				{
-					RuntimeObject* L_17 = V_2;
-					V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_17, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
-					RuntimeObject* L_18 = V_4;
-					if (!L_18)
+					RuntimeObject* L_19 = V_2;
+					V_4 = ((RuntimeObject*)IsInst((RuntimeObject*)L_19, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_20 = V_4;
+					if (!L_20)
 					{
-						goto IL_00aa;
+						goto IL_00c4;
 					}
 				}
 				{
-					RuntimeObject* L_19 = V_4;
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_19);
+					RuntimeObject* L_21 = V_4;
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_21);
 				}
 
-IL_00aa:
+IL_00c4:
 				{
 					return;
 				}
@@ -3803,44 +3813,44 @@ IL_00aa:
 		try
 		{
 			{
-				goto IL_008d_1;
+				goto IL_00a7_1;
 			}
 
-IL_0067_1:
+IL_0081_1:
 			{
-				RuntimeObject* L_20 = V_2;
-				RuntimeObject* L_21;
-				L_21 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_20);
-				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_21, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = V_3;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
-				L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+				RuntimeObject* L_22 = V_2;
+				RuntimeObject* L_23;
+				L_23 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_22);
+				V_3 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_23, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = V_3;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+				L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-				bool L_24;
-				L_24 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_22, L_23, NULL);
-				if (!L_24)
+				bool L_26;
+				L_26 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_24, L_25, NULL);
+				if (!L_26)
 				{
-					goto IL_008d_1;
+					goto IL_00a7_1;
 				}
 			}
 			{
-				List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_25 = __this->___agentObstacles;
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26 = V_3;
-				List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline(L_25, L_26, List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var);
+				List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_27 = __this->___agentObstacles;
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28 = V_3;
+				List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_inline(L_27, L_28, List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var);
 			}
 
-IL_008d_1:
+IL_00a7_1:
 			{
-				RuntimeObject* L_27 = V_2;
-				bool L_28;
-				L_28 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_27);
-				if (L_28)
+				RuntimeObject* L_29 = V_2;
+				bool L_30;
+				L_30 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_29);
+				if (L_30)
 				{
-					goto IL_0067_1;
+					goto IL_0081_1;
 				}
 			}
 			{
-				goto IL_00ab;
+				goto IL_00c5;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -3849,19 +3859,19 @@ IL_008d_1:
 		}
 	}
 
-IL_00ab:
+IL_00c5:
 	{
-		int32_t L_29 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_29, 1));
+		int32_t L_31 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_31, 1));
 	}
 
-IL_00af:
+IL_00c9:
 	{
-		int32_t L_30 = V_1;
-		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_31 = V_0;
-		if ((((int32_t)L_30) < ((int32_t)((int32_t)(((RuntimeArray*)L_31)->max_length)))))
+		int32_t L_32 = V_1;
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_33 = V_0;
+		if ((((int32_t)L_32) < ((int32_t)((int32_t)(((RuntimeArray*)L_33)->max_length)))))
 		{
-			goto IL_005c;
+			goto IL_0076;
 		}
 	}
 	{
@@ -4243,9 +4253,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PedestrianAgent__ctor_m56122AFB88FC54B91
 {
 	{
 		__this->___AgentRepulsionCoefficient = ((int32_t)200);
-		__this->___ambulanceRepulsionCoefficient = ((int32_t)300);
+		__this->___ambulanceRepulsionCoefficient = ((int32_t)800);
 		__this->___personalSpaceRadius = (3.0f);
-		__this->___ambulanceSpaceRadius = (15.0f);
+		__this->___ambulanceSpaceRadius = (20.0f);
 		__this->___attractionStrength = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;

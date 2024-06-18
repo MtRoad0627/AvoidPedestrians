@@ -10,16 +10,19 @@ public class PedestrianAgent : MonoBehaviour
     public List<Transform> agentObstacles; // エージェント障害物のリスト
     public Transform[] ObstacleAgentGroups; // 複数のAgentgroupをインスペクターから割り当てる
     private int AgentRepulsionCoefficient = 200; // エージェント反発力の係数
-    private int ambulanceRepulsionCoefficient = 300; // 救急車反発力の係数
+    private int ambulanceRepulsionCoefficient = 800; // 救急車反発力の係数
     public Transform ambulanceObstacle; // 避けるべき障害物としての救急車
     public List<Transform> attractions; // 引力を及ぼす対象のリスト
     private float personalSpaceRadius = 3f; // 個人の空間の半径
-    private float ambulanceSpaceRadius = 15f; // 救急車に対する個人の空間の半径
+    private float ambulanceSpaceRadius = 20f; // 救急車に対する個人の空間の半径
     public float attractionStrength = 1.0f; // 引力の強さ
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        // エージェントの最大速度をランダムに設定
+        agent.speed = Random.Range(0.5f, 5.0f);
 
         // エージェントにランダムタグがついていたら目的地をランダムに設定
         if (this.gameObject.tag == "Random")
