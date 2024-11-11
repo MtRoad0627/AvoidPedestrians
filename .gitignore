@@ -1,0 +1,43 @@
+# Unityにおけるキャッシュとビルド生成物を除外
+
+# Unityが再生成するキャッシュフォルダ
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+UserSettings/
+
+# ビルドによって生成されるファイル
+MemoryCaptures/
+*.apk
+*.aab
+*.unitypackage
+
+# バージョン管理不要のプロジェクト設定ファイル
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/VersionControlSettings.asset
+
+# IDEやエディタ固有の設定ファイル
+.vscode/
+.idea/
+*.csproj
+*.pidb
+*.sln
+*.user
+*.userprefs
+*.unityproj
+*.dll
+*.exe
+*.pdf
+*.mid
+*.midi
+*.wav
+*.mp3
+*.ogg
+*.vsconfig
+
+# Git LFS解除後の大きなアセットファイルの例
+Library/PackageCache/
+Library/Bee/
