@@ -1,0 +1,4 @@
+Assets/Private/JapaneseFonts/NotoSansJP-Medium[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/Private/JapaneseFonts/NotoSansJP-Medium filter=lfs diff=lfs merge=lfs -text
+.git/lfs/objects/04/1a/041a33dee232cb1ce1c381ee68266a034b488f7cbef11d6049ce4057ec8e9e3a filter=lfs diff=lfs merge=lfs -text
+.git/objects/pack/pack-779a3072c0415287a8a971c1ee8c55fa7ebc9aa1.pack filter=lfs diff=lfs merge=lfs -text
