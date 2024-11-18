@@ -23,7 +23,7 @@ public class ObjectiveReachTargets : Objective
         
         yield return new WaitForEndOfFrame();
 
-        title = "すべてのチェックポイントを通って！";
+        title = "";
         
         if (mustCollectAllPickups)
             pickupsToCompleteObjective = NumberOfPickupsTotal;

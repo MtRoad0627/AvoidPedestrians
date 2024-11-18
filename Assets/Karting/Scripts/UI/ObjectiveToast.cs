@@ -79,16 +79,18 @@ public class ObjectiveToast : MonoBehaviour
 
     public void Complete()
     {
-        m_StartFadeTime = Time.time + completionDelay;
-        m_IsFadingIn = false;
-        m_IsMovingIn = false;
+        //コメントアウトにより、フェードインの処理を削除中
+
+        // m_StartFadeTime = Time.time + completionDelay;
+        // m_IsFadingIn = false;
+        // m_IsMovingIn = false;
 
         // if a sound was set, play it
         PlaySound(completedSound);
 
-        // start the fade out
-        m_IsFadingOut = true;
-        m_IsMovingOut = true;
+        // // start the fade out
+        // m_IsFadingOut = true;
+        // m_IsMovingOut = true;
     }
 
     public void SetDescriptionText(string text)
